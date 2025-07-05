@@ -1,0 +1,31 @@
+    Onde encontrar Fontes Personalizadas?
+
+As fontes são importantes para o projeto.
+Na tipografia existe os chamados TIPOS GENÉRICOS, 
+conhecidos como GRUPOS DE FONTES , que são: 
+
+-> Serif; 
+pequenos traços e prolongamentos que ficm no fim de cada letra,
+conhecidos como serifas. exemplo: times new Roman e Georgia.
+
+-> Sans-Serif; 
+não possuem traços e prolongamentos; 
+exemplo: ARIAL.
+
+-> Display;
+fontes enfeitadas. tem tipografias comemorativas, ou
+enfeitadas.
+
+-> Handwriting;
+fontes que se assemelham a escrita à mão.
+manuscritas ou cursivas.
+
+-> Monospace; 
+fontes mono-espaçadas .
+todos os caracteres ocupam a
+a mesma largura. exemplo: google fonts
+
+
+LINKS: 
+
+https://www.fonts.google.com

@@ -1,0 +1,12 @@
+*{
+    font-family: roboto, sans-serif;
+}
+
+.exemplo {
+    background-color: palevioletred;
+    width: 200px;
+    height: 200px;
+    border-color: aqua;
+    border-style: outset;
+    border-color: purple greenyellow;
+}

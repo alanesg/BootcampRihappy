@@ -1,0 +1,18 @@
+Tipos de seletores:
+
+*Seletor por tipo : busca
+ Elementos por uma tag HTML;
+
+ *seletor por id(#) : Busca elementos através 
+ do atributo "id";
+
+ *Seletor por classe(.):Busca Elementos 
+ através do atributo "class";
+
+ *Seletor Universal(*): Seleciona todos os elementos
+ hTML;
+
+ *Seletor de atributo([atrib]): Seleciona elementos que
+ possuem um atributo específico em nosso documento
+ HTML e conseguimos também buscar atributos com um
+ valor específico;

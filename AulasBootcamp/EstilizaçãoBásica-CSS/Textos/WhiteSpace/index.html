@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White-Space</title>
+
+    <style>
+        .exemplo {
+            width: 200px;
+            background-color: aquamarine;
+        }
+        span {
+            background-color: green;
+            color:white;
+        }
+        #nowrap { /*todo o conteúdo numa linha apenasde texto*/
+           white-space: nowrap;
+        }
+        #pre{ /*espaços em brancos permanecem como são*/
+            white-space: pre;
+        }
+        #pre-line {
+            white-space: pre-line;
+        }
+        #pre-wrap{
+            white-space: pre-wrap;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Propriedade <code>White-space</code></h2>
+    <p>Define como os espaços em branco do texto de um determinado elemento é 
+    tratado
+    </p>
+    <i>Exemplos: </i> <br> <br>
+
+    <code>White-space: normal;</code>
+    <p class="exemplo">
+    <span>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, temporibus. Eos fugit sint, consequuntur soluta aspernatur porro id maiores deleniti. Architecto, molestiae perspiciatis optio obcaecati sint dicta asperiores iure esse!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos perferendis, eum eius neque possimus suscipit enim amet facere, delectus illum quia laboriosam necessitatibus. Earum molestiae quidem ipsum unde assumenda vitae!
+    </span>
+</p>
+
+    <code>white-space: nowrap;</code>
+    <p id="nowrap" class="exemplo">
+        <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem delectus aliquam incidunt ipsam sunt! Repellendus unde iusto maxime? Molestiae commodi nam voluptatum voluptas, quidem ad earum maiores iste rem sunt.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, quod soluta asperiores corrupti, harum sed blanditiis quos, atque error odio hic cupiditate! Officiis, libero? Optio maxime illum quo eveniet aperiam!
+        </span>
+    </p>
+
+    <code>white-space: pre;</code>
+    <p id="pre" class="exemplo">
+        <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem delectus aliquam incidunt ipsam sunt! Repellendus unde iusto maxime? Molestiae commodi nam voluptatum voluptas, quidem ad earum maiores iste rem sunt.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, quod soluta asperiores corrupti, harum sed blanditiis quos, atque error odio hic cupiditate! Officiis, libero? Optio maxime illum quo eveniet aperiam!
+        </span>
+    </p>
+
+      <code>white-space: pre-line;</code>
+    <p id="pre-line" class="exemplo">
+        <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem delectus aliquam incidunt ipsam sunt! Repellendus unde iusto maxime? Molestiae commodi nam voluptatum voluptas, quidem ad earum maiores iste rem sunt.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, quod soluta asperiores corrupti, harum sed blanditiis quos, atque error odio hic cupiditate! Officiis, libero? Optio maxime illum quo eveniet aperiam!
+        </span>
+    </p>
+
+      <code>white-space: pre-wrap;</code>
+    <p id="pre-wrap" class="exemplo">
+        <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem delectus aliquam incidunt ipsam sunt! Repellendus unde iusto maxime? Molestiae commodi nam voluptatum voluptas, quidem ad earum maiores iste rem sunt.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam veritatis repellendus, quae necessitatibus iure nihil, itaque totam, non ipsum alias vero cupiditate officiis! Eaque totam, quisquam eos unde provident odio.
+        </span>
+    </p>
+
+      <code>white-space: break-spaces;</code>
+    <p id="break-spaces" class="exemplo">
+        <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem delectus aliquam incidunt ipsam sunt! Repellendus unde iusto maxime? Molestiae commodi nam voluptatum voluptas, quidem ad earum maiores iste rem sunt.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, quod soluta asperiores corrupti, harum sed blanditiis quos, atque error odio hic cupiditate! Officiis, libero? Optio maxime illum quo eveniet aperiam!
+        </span>
+    </p>
+</body>
+</html>

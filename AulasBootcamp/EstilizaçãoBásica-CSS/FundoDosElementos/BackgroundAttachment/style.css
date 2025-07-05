@@ -1,0 +1,27 @@
+body {
+    height: 200vh;
+}
+div {
+    margin-bottom: 30px;
+}
+
+.exemplo {
+    width: 300px;
+    height: 300px;
+    background-image: url('./img/lavanda.jpeg.jpg');
+    background-size:cover;
+    border: 1px solid rgb(178, 113, 244);
+    overflow: auto;
+}
+/*fixed (imagem não sai do lugar mesmo com a rolagem do texto)
+scroll (se mexe de acordo com a rolagem da página)
+local (a  imagem rola junto com o texto)*/
+#fixed {
+    background-attachment: fixed;
+}
+#scroll {
+    background-attachment: scroll;
+}
+#local {
+    background-attachment: local;
+}

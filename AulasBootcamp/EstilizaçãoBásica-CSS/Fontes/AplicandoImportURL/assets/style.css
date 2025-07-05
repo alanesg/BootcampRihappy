@@ -1,0 +1,10 @@
+/*Utilizei o site google fonts para pegar a fonte
+cliquei na opção IMPORTAR e apareceu o link de style 
+para adicionar ao projeto teste.*/
+
+@import url('./global.css');
+
+P {
+    font-weight: bold;
+    font-style: italic;
+}

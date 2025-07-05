@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinador Irmão</title>
+    <style>
+        /*irmãos de nível de identação*/
+        /*Combinador irmão adjacente (o mais próximo) */
+        div + p {
+            color: tomato;
+        }
+        .fundo-verde + p {
+          background: rgb(176, 216, 229);  
+        }
+        /*Combinador irmão em geral (Serve pra qualquer irmão)*/
+        div ~ p{
+            color:rgb(193, 122, 36);
+        }
+   </style>
+</head>
+<body>
+    <div class="fundo-verde">
+        <p>Parágrafo 1 dentro da div</p>
+        <p>Parágrado 2 dentro da div</p>
+        <span>
+            <p>Parágrafo dentro da div, dentro do span</p>
+        </span>
+    </div>
+
+     <p>Parágrafo 4, fora da div</p>
+     <p>Parágrafo 5, fora da div</p>
+
+    <div class="fundo-verde">
+        <p>Parágrafo 6, dentro da div</p>
+        <p>Parágrafo 7, dentro da div</p>
+        <span>
+            <p>Parágrafo 8, dentro da div, dentro do span</p>
+        </span>
+    </div>
+    
+    <p>Parágrafo 9, fora da div</p>
+    <p>Parágrafo 10, fora da div</p>
+
+    <div class="fundo-azul">
+        <p>Parágrafo 11, dentro da div</p>
+        <p>Parágrafo 12, dentro da div</p>
+        <span>
+            <p>Parágrafo 13 dentro da div, dentro do span</p>
+        </span>
+    </div>
+
+    <p>Parágrafo 14, fora da div</p>
+    <p>Parágrafo 15, fora da div</p>
+</body>
+</html>

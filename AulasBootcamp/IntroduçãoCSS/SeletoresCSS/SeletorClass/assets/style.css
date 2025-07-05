@@ -1,0 +1,25 @@
+/*seletor por tipo*/
+h1{
+    background: pink;
+    color: black;
+}
+div{
+    background: rgb(241, 239, 239);
+    color: black;
+}
+
+/*seletor por ID*/
+#texto-boas-vindas{
+    color: rgb(250, 201, 142);
+}
+#explicacao-seletores{
+    color: rgb(90, 156, 156);
+}
+
+/* seletor por class*/
+.seletores-mais-comuns {
+    color: red;
+} 
+.texto-maiusculo{
+    text-transform: uppercase;
+}

@@ -1,0 +1,92 @@
+*{
+background-color: #f6caa6;
+font-family:'cursive';
+text-align: center;
+
+}
+.colunas {
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+.imagem-esquerda{
+    float: left;
+    width: 50%;
+    height: 50%;
+ 
+}
+.coluna-esquerda{
+    width: 45%;
+}
+.coluna-direita{
+    width: 45%;
+}
+ .Pedido{
+    text-align: right;
+    margin: 100px;
+    max-width: 700px;
+    margin: 0 auto;
+ }
+
+.Pedido h1{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 100px ;
+    justify-content: center;
+    color: #5a2e24;
+}
+.Pedido label{
+    color: #5a2e24;
+    font-size: 18px;
+}
+.Pedido input{
+    border: 1px solid #5a2e24;
+    border-radius: 20px;
+    height: 30px;
+}
+
+#data-entrega{
+    border: 1px solid #5a2e24;
+    border-radius: 20px;
+    width: 120px;
+    height: 30px;
+}
+#mensagem{
+    width: 159px;
+    max-height: 500px;
+    border:1px solid #5a2e24;
+
+}
+/*opção produto*/
+#produto {
+    color: #5a2e24;
+    border:1px solid #5a2e24;
+    border-radius: 30px;
+    height: 30px;
+}
+
+
+/*Botão*/
+#agendar {
+    color: #fbb03b;
+    border:1px solid white;
+    border-radius: 20px;
+    background-color: #5a2e24;
+    align-items: center;
+    margin: 30px 10px 30px 10px;
+    height: 40px;
+    width: 100px;
+}
+
+#inicio{
+    color: #fbb03b;
+    border:1px solid white;
+    border-radius: 20px;
+    background-color: #5a2e24;
+    margin: 30px 10px 30px 0px;
+    height: 40px;
+    width: 100px;
+}
+#agendar:hover, #inicio:hover{
+    color: #f6caa6;
+}

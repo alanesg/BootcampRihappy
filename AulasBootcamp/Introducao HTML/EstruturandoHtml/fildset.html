@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trilha html - Dio</title>
+    <style>
+        
+        .row{
+            margin:5px;
+        }
+        label{
+            width: 100px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+        fieldset{
+            margin:15px 0;
+            border-radius: 10px;
+            border-color: blueviolet;
+        }
+    </style>
+</head>
+<!--utilizando a tag fildset-->
+<!--fildset faz uma moldura em volta da div-->
+<!--a tag legend fica na moldura para definir a área-->
+<!-- row é uma classe chamada linha-->
+ <!--identação é IMPORTANTE!-->
+<body>
+    <h1> Cadastre-se</h1>
+    <fieldset>
+        <legend> Dados Pessoais</legend>
+            <div class="row">
+                <label>Nome:</label><input type="text" />
+                <label>Idade:</label><input type="date" />
+            </div>
+            <div class="row">
+                <label>E-mail:</label><input type="email" />
+                <label>Instagram: </label><input type="text" />    
+            </div>
+            <div class="row">
+                <label>Endereço:</label><input type="text" />
+                <label>CEP:</label><input type="text" />
+            </div>
+            <div class="row">
+                <label>Cidade/UF:</label><input type="text" />
+                <label>Bairro:</label><input type="text" />
+            </div>
+    </fieldset>
+    <fieldset>
+        <legend>Dados Profissionais</legend>
+            <div class="row">
+                <label>Profissão:</label><input type="text" />
+                <label>Empresa:</label><input type="text" />
+            </div>
+            <div class="row">
+                <label>Experiência:</label><input type="text" />
+                <label>Sobre Mim: </label><input type="text">
+            </div>
+   </fieldset>
+   <fieldset>
+        <legend> Informações para Contato</legend>
+            <div class="row">
+                <label>Celular:</label><input type="number" />
+                <label>Whatsapp:</label><input type="number" />
+            </div>
+            <div class="row">
+                <label>Linkedin:</label><input type="text" />
+                <label>Github:</label><input type="text" />
+            </div>
+   </fieldset>
+        <div class="row">
+            <button type="reset">
+                Limpar
+            </button>
+            <button type="submit">
+                Enviar Cadastro
+            </button>
+        </div>
+</body>
+</html>

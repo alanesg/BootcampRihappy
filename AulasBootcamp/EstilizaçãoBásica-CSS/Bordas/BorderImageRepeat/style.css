@@ -1,0 +1,24 @@
+* {
+    margin-bottom: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.exemplo {
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    border: 30px solid;
+}
+
+#exemplo-1{
+    border-image-source: url('./img/star.png');
+    border-image-repeat:round; /*round, repeat e space*/
+    border-image-slice: 169;
+    
+}
+#exemplo-2 {
+    border-image-source: linear-gradient(pink, blue);
+    border-image-slice: 10;
+    border-image-width: 10;
+}
+

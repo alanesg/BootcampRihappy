@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pedido</title>
+</head>
+<body>
+    <!--utilizando o checkbox e Radio -->
+    <!-- esse "action" serve para enviar dados para a url formulario-pedido, mas eles não serão exibidos-->
+     <!--utilizei um style pra dar uma vida-->
+    <form  method="post" style="color: blueviolet;" />
+        <h3>Você Selecionou: Pizza de Frango</h3>
+        <p>Quais Opcionais você deseja?</p>
+        <input type="checkbox" name="opcional[]" value="queijo"> + queijo <br>
+        <input type="checkbox" name="opcional[]" value="cebola"> + cebola <br>
+        <input type="checkbox" name="opcional[]" value="azeitona"> + azeitonas <br>
+        <input type="checkbox" name="opcional[]" value="catupiry"> + catupiry <br>
+        <input type="checkbox" name="opcional[]" value="cheddar"> + cheddar <br>
+        <p> Borda Recheada?</p>
+        <input type="radio" name="borda" value="sim">Sim<br>
+        <input type="radio" name="borda" value="não">Não<br>
+        <p>Escolha sua Bebida: </p>
+        <input type="radio" name="bebida" value="suco">Suco<br>
+        <input type="radio" name="bebida" value="refrigerante"> Refrigerante<br>
+        <input type="radio" name="bebida" value="H2O limão"> H2O Limão<br>
+        <input type="radio" name="bebida" value="água"> Água<br>
+        <input type="radio" name="bebida" value="nenhum"> Nenhum<br> <br>
+
+        <button type="submit">Enviar Pedido</button>
+    </form>
+</body>
+</html>

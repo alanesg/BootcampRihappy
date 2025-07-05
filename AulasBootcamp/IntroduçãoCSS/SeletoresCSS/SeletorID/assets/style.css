@@ -1,0 +1,15 @@
+h1{
+    background: pink;
+    color: black;
+}
+div{
+    background: gainsboro;
+    color: black;
+}
+/*seletor por ID*/
+#texto-boas-vindas{
+    color: bisque;
+}
+#explicacao-seletores{
+    color: rgb(90, 156, 156);
+}

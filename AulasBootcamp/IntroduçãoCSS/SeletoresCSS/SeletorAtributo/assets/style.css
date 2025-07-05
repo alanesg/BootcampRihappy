@@ -1,0 +1,16 @@
+/*seletor de atributos*/
+[title="Netflix"]{
+    background: rgb(238, 202, 177);
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+[title="Prime"]{
+    background: rgb(214, 223, 239);
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+[href$="github.com"]{
+    background: rgb(248, 248, 174);
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

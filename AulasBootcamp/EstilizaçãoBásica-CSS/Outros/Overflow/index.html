@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Overflow</title>
+    <style>
+        .exemplo {
+            background-color: rgb(222, 183, 222);
+            border: 3px solid orange;
+            padding: 20px;
+            width: 200px;
+            height: 200px;
+           overflow: visible;
+        }
+        #visible{
+            overflow: visible;
+        }
+        #hidden{
+            overflow: hidden;
+        }
+        #scroll{
+            overflow: scroll;
+        }
+        #auto{
+            overflow: auto;
+        }
+    </style>
+</head>
+<!--overflow só funciona em elementos em bloco com altura especificada-->
+<!--overflow: visible; o conteúdo não é cortado e aparece-->
+<!--overflow: hidden; esconde, oculta o conteúdo-->
+<!--overflow: scroll; tem barrinha de rolagem-->
+<!--overflow: auto; só aparece barra de rolagem quando ultrapassar o valor definido-->
+<body>
+    <h1>Propriedade <code>Overflow</code></h1>
+    <p>Controla como o conteúdo deve ser exibido caso ultrapasse os limites do container.</p>    
+    
+    <i>Exemplo: </i> <br><br><br>
+
+    <code>overflow: visible ;</code>
+    <div id="visible" class="exemplo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, autem, deleniti provident laboriosam corrupti odit dolor commodi asperiores eius doloremque reiciendis expedita consequuntur quod quidem labore illum vero architecto nulla!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam repellat eligendi veniam velit totam. Facilis, perferendis cum recusandae molestiae, labore ratione doloribus amet, vitae non numquam eos consequuntur totam sapiente!</p>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br>
+
+     <code>overflow: hidden ;</code>
+    <div id="hidden" class="exemplo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, autem, deleniti provident laboriosam corrupti odit dolor commodi asperiores eius doloremque reiciendis expedita consequuntur quod quidem labore illum vero architecto nulla!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam repellat eligendi veniam velit totam. Facilis, perferendis cum recusandae molestiae, labore ratione doloribus amet, vitae non numquam eos consequuntur totam sapiente!</p>
+    </div>
+
+
+      <code>overflow: scroll;</code>
+    <div id="scroll" class="exemplo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, autem, deleniti provident laboriosam corrupti odit dolor commodi asperiores eius doloremque reiciendis expedita consequuntur quod quidem labore illum vero architecto nulla!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam repellat eligendi veniam velit totam. Facilis, perferendis cum recusandae molestiae, labore ratione doloribus amet, vitae non numquam eos consequuntur totam sapiente!</p>
+    </div>
+
+      <code>overflow: auto;</code>
+    <div id="auto" class="exemplo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, autem, deleniti provident laboriosam corrupti odit dolor commodi asperiores eius doloremque reiciendis expedita consequuntur quod quidem labore illum vero architecto nulla!</p>
+        </div>
+
+    
+
+    </body>
+</html>

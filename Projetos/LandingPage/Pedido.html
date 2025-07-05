@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/pedido.css">
+</head>
+<body>
+    <div class="container">
+  <img src="./Image/BolodeLaranja.png" class="imagem-esquerda" alt="">
+  <form class="Pedido">
+    <h1>Pedido</h1>
+    <div class="colunas">
+        <!--coluna esquerda-->
+      <div class="coluna-esquerda">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br>
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco"><br><br>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone"><br><br>
+      </div>
+      <!--Coluna direita e produto-->
+      <div class="coluna-direita">
+        <label for="data-entrega">Data-Entrega:</label>
+        <input type="date" id="data-entrega" name="data-entrega"><br><br>
+        <label for="produto">Produto de interesse:</label>
+        <select name="produto" id="produto">
+          <option value="Bolo de noiva">Bolo de noiva</option>
+          <option value="Bolo para formatura">Bolo para formatura</option>
+          <option value="Bolos(diversos sabores)">Bolos(diversos sabores)</option>
+          <option value="Doces">Doces</option>
+          <option value="Doces Personalizados">Doces Personalizados</option>
+          <option value="Salgados">Salgados</option>
+          <option value="kits festa">kits festa</option>
+        </select><br><br>
+        <label for="mensagem" id="text">Detalhes:</label>
+        <textarea id="mensagem" name="mensagem"></textarea><br><br>
+      </div>
+    </div>
+    <div class="botoes">
+      <button type="submit" id="agendar"> Agendar</button>
+      <a href="./index.html"> 
+        <button type="button" id="inicio">Página inicial</button>
+      </a>
+    </div>
+  </form>
+</div>
+</body>
+</html>

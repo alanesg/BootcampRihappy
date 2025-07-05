@@ -1,0 +1,33 @@
+body {
+    height: 200vh;
+}
+div {
+    margin-bottom: 30px;
+}
+
+.exemplo {
+    width: 300px;
+    height: 300px;
+    background-image: url('./img/orquidea.jpeg.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: 15px dashed rgb(178, 113, 244);
+    padding: 30px;
+}
+/* padding-box cobrir a area onde o padding ocupa;
+border box (começa da esquerda pra direita e cobre além
+do espaçamento interno e a área que se encontra);
+content-box(começa da esquerda, mas não cobre a borda nem a área
+do espaçamento.)*/
+
+#padding-box {
+    background-origin: padding-box;
+}
+#border-box {
+    background-origin: border-box;
+}
+#content-box {
+    background-origin: content-box;
+}
+
+

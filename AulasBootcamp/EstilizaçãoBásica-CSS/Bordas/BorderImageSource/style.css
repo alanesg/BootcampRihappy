@@ -1,0 +1,21 @@
+* {
+    margin-bottom: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.exemplo {
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    border: 30px solid;
+    
+}
+
+/*Para o border source funciona é preciso adicionar
+uma bordar com propriedade*/
+#exemplo-1 {
+    border-image-source: url('./img/flores.jpeg.jpg');
+}
+#exemplo-2 {
+    border-image-source: linear-gradient(red,blue, pink)
+}

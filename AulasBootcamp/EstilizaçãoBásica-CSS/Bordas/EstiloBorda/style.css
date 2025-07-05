@@ -1,0 +1,24 @@
+*{
+    font-family: roboto, sans-serif;
+}
+
+.exemplo {
+    background-color: palevioletred;
+    width: 200px;
+    height: 200px;
+    border-color: aqua;
+    border-style: outset;
+
+}
+
+/*tipos de estilos: 
+solid - linhas escura
+none - sem bordas
+dashed - tracinhos
+double - dois tracinhos
+groove - borda 3d
+ridge - parece com o groove
+inset - tipo afundado ou pressionado
+outset - elemento saindo da tela
+dotted dashed - borda mista
+*/

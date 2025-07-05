@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word break</title>
+
+    <style>
+        .exemplo{
+            width: 120px;
+            color: black;
+            margin-left: 20px;
+            background-color: blueviolet;
+        }
+        h2, h2+ p, code {
+            margin-left: 20px;
+        }
+        #normal {
+            word-break: normal;
+        }
+        #break-word {
+            word-break: break-all;
+        }
+        #keep-all {
+            word-break: keep-all;
+        }
+    </style>
+</head>
+<!--A diferenca do word-wrap para o wor-break é
+que umfaz a quebra de palavras grandes de forma que não
+atrapalhe na nossa página e quebra de linha-->
+<body>
+    <h2>Propriedade <code>word-break</code></h2>
+    <p>Define, quando o nosso texto deve ter uma quebra de linha.
+    </p>
+
+    <code>word-break: normal</code>
+    <p id="normal" class="exemplo">
+        Trilha de CSS TrilhaDeCSSTudoJunto Trilha de CSS
+    </p>
+
+     <code>word-break: break-all</code>
+    <p id="break-all" class="exemplo">
+        Trilha de CSS TrilhaDeCSSTudoJunto Trilha de CSS
+    </p>
+
+    <code>word-break: keep-all;</code>
+    <p id="keep-all" class="exemplo">
+        Trilha de CSS TrilhaDeCSSTudoJunto Trilha de CSS
+    </p>
+
+
+</body>
+</html>

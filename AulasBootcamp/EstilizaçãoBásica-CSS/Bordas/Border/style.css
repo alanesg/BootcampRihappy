@@ -1,0 +1,13 @@
+*{
+    font-family: roboto, sans-serif;
+}
+
+.exemplo {
+    background-color: palevioletred;
+    width: 200px;
+    height: 200px;
+
+    border-bottom: 10px solid purple;
+    border-top: 5px dashed red;
+    
+}

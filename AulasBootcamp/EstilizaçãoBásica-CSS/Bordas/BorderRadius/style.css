@@ -1,0 +1,11 @@
+*{
+    font-family: roboto, sans-serif;
+}
+
+.exemplo {
+    background-color: rgb(232, 23, 93);
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+}

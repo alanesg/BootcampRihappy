@@ -1,0 +1,10 @@
+* {
+    margin-top: 10px;
+    background: palevioletred;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(16, 15, 15);
+}
+
+ul li {
+ color: pink;
+}

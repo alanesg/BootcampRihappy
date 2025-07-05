@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <titl>Formulário de inscrição</titl>
+</head>
+<body>
+    <!--utilizando SELECT BOX= lista pré definida que o usuário escolhe -->
+    <form method="post">
+        <label> Nome: </labe><input type="name"><br>
+        <label>Cargo: </label>
+        <select name="role">
+            <option value="Selecione o Cargo">Selecione o Cargo</option>
+            <option value="Estagiario(a)">Estagiario(a)</option>
+            <option value="Administrador(a)">Administrador(a)</option>
+            <option value="Gerente">Gerente</option>
+            <option value="Supervisor(a)">Supervisor(a)</option>
+            <option value="Diretor">Diretor</option>
+        </select> 
+        <br>
+        <label>Assunto: </label><input type="text"><br>
+
+        <button type="submit" onmouseenter="alert('Formulário enviado!')">Enviar</button>
+    </form>
+</body>
+</html>

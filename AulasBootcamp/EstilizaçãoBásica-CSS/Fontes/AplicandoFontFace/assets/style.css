@@ -1,0 +1,14 @@
+@font-face {
+    font-family: Roboto ;
+    src: url('./fonts/RobotoSerif-Italic-VariableFont_GRAD\,opsz\,wdth\,wght.ttf');
+}
+@font-face {
+    font-family: Roboto ;
+    src: url('./fonts/CrimsonText-BoldItalic.ttf');
+    font-weight: bold;
+}
+
+p {
+    font-family: Roboto;
+    font-weight: bold;
+}
