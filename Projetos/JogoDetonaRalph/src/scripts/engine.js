@@ -11,7 +11,6 @@ const state = {
         hitPosition: 0,
         result: 0,
         curretTime: 60,
-        lifeTime: 60,
         quantLives: 3,
     },
     actions: {
@@ -25,29 +24,27 @@ function countDown(){
     state.values.curretTime--; /*Tempo internamente*/
     state.view.timeLeft.textContent = state.values.curretTime; /*tempo visual*/
     /*se não tiver a pontuação minima de 25 pontos, perde uma vida*/
-    state.values.lifeTime--;
-     if(state.values.lifeTime <= 0 && state.values.result < 25) {
-        state.values.quantLives--;
-        document.querySelector(".menu-lives h2").textContent = "x" +
-        state.values.quantLives;
-        alert("Você perdeu uma vida! O seu resultado foi: " + state.values.result);
-        state.values.lifeTime = 60;
-    } 
-    /*se tiver pontuação igual ou maior que 25 o usuário ganha!*/
-    if(state.values.lifeTime <= 0 && state.values.result >= 25){
-        clearInterval(state.actions.countDownTimerId);
-        clearInterval(state.actions.timerId);
-        state.values.quantLives = state.values.quantLives;
-        alert("Você Venceu!")
+    if(state.values.curretTime <= 0){
+    if(state.values.result < 25){ /**se o resultado for menor que 25, perde uma vida*/
+      state.values.quantLives--;
+      document.querySelector(".menu-lives h2").textContent = "x" + state.values.quantLives;
+      alert("Você perdeu uma vida! O seu resultado foi: " + state.values.result);
+    } else {
+      alert("Você atingiu a pontuação! O seu resultado foi: " + state.values.result);
     }
-    /*Só vai aparecer o GAME OVER quando todas as vidas acabarem */
-    if(state.values.quantLives <= 0){
-        clearInterval(state.actions.countDownTimerId);
-        clearInterval(state.actions.timerId);
-        alert("Game Over! O seu resultado foi: " + state.values.result);
-    } 
-
+    state.values.curretTime = 60; /**reinicia o tempo atual */
+    state.values.result = 0; /**reinicia o resultado */
+    state.view.timeLeft.textContent = state.values.curretTime; /**atualiza o tempo na tela*/
+    state.view.score.textContent = state.values.result; /**atualiza o score/ resultado  na tela*/
+    
+    if(state.values.quantLives <= 0){ /**se a quantida de vida for menor ou igual a zero é game over*/
+      clearInterval(state.actions.countDownTimerId);
+      clearInterval(state.actions.timerId);
+      alert("Game Over!");
+    }
+  }
 }
+   
 
 /*audio*/
 function playSound(audioName) {
