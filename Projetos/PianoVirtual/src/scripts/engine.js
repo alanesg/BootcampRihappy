@@ -8,8 +8,6 @@ const volumeSlider = document.querySelector(".volume-slider input");
 const keysCheck = document.querySelector(".keys-check input");
 
 
-
-
 /*pegar teclas mapeadas (as teclas só tocam se tiver dentro desse vetor)*/
 let mapedKeys = [];
 
