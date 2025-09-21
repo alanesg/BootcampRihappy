@@ -11,9 +11,14 @@
     flex-flow: row nowrap;
 }
 
-.s-wrapper video {
-    position: fixed;
-    width: 100%;
+.s-wrapper video { /*config. dos videos*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* garante que o conteúdo fique por cima */
 }
 
 .s-wrapper .s-left-column {
@@ -33,12 +38,31 @@
     height: 100%;
     width: 100%;
     padding-left: 130px;
-   /* background-size: cover;*/
+    background-size: cover;
     position: relative;
 }
 
+/* Deixar a Galeria mais controlada */
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 16px;         /* espaço entre imagens */
+  margin-top: 10px;  /* controla distância do trailer */
+}
+
+.gallery img {
+  max-width: 200px;  /* reduz tamanho das imagens */
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover { /*aspecto de zoom nas imagens*/
+  transform: scale(1.05);
+}
+
 .s-wrapper .s-main-content__top {
-    height: 100vh;
+    height: 88vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
