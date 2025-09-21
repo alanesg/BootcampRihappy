@@ -82,7 +82,7 @@
 } 
 
 .s-wrapper .s-main-content__top .s-description {
-    background-color: rgba(0, 0, 0,.7);
+    background-color: rgba(0, 0, 0,.7); /*caixa da sinopse meio transparente*/
     max-width: 50%;
     padding: 20px;
     border-radius: 10px;
