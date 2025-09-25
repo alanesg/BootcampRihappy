@@ -13,10 +13,17 @@
         <img class="logo-Menu" src ="./assets/images/icons/logoAG- icone.png" alt="AG-Menu">
         <ul>
             <li class="menu_item">
-                <a href="#">QUEM SOU EU?</a>
+                <a href="./pages/QuemSouEu/me.html">QUEM SOU EU?</a>
             </li>
-            <li class="menu_item">
-                <a href="#">PROJETOS</a>
+            <li class="menu_item dropdown">
+                <a href="#" class="dropdown-toggle">PROJETOS 
+                    <span class="caret">▼</span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="./pages/Dumar/ocean.html">Dumar</a></li>
+                    <li><a href="./pages/Confeitaria/cake.html">Confeitaria</a></li>
+                    <li><a href="./pages/Mundo-Invertido/world.html">Mundo Invertido</a></li>
+                </ul>
             </li>
             <li class="menu_item">
                 <a href="#">SKIILS</a>
@@ -29,11 +36,34 @@
 
    <div class="container">
     <div class="Home_container__left">
+        <div class= "solution-container">
         <img class="arrow-right" src ="./assets/images/icons/seta-direita.png" alt="arrow">
+        <span class="solutionHome">
+            SOLUÇÕES
+        </span>
+        </div>
+        <span class="criativeHome">
+            CRIATIVAS
+        </span>
+        <div class="proposite-container">
+            <span class="PropositeHome">COM<br>PROPÓSITO</span>
+            <img class="arrow-diagonal" src ="./assets/images/icons/seta-diagonal cima.png" alt="arrow">
+        </div>
     </div>
-    <div class="Home_container__right">
 
+    <div class="Home_container__right image-container">
+        <div class="images-wrapper">
+            <img class="coffee-mouseicon" src="./assets/images/icons/iconexícara1.png" alt="cofee-mouse">
+            <img class="alanes-photo" src="./assets/images/AlanesLogoHome.jpeg" alt="AlanesGomes">
+        </div>
+        <div class="text-container">
+            <h2 class="home-right_name">ALANES GOMES SILVA</h2>
+            <span class="home-right_analyst">ANALISTA E DESENVOLVEDORA WEB</span>
+        </div>
     </div>
-   </div>
+</div>
+    <!--SCRIPT-->
+        <script src="./assets/scripts/Home.js" defer></script>
+
 </body>
 </html>
