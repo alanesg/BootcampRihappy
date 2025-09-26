@@ -1,21 +1,23 @@
-@import url(./Reset.css);
-@import url(./Global.css);
-@import url(./Home.css);
+@import url(./reset.css);
+@import url(./global.css);
+@import url(./home.css);
 
 body {
     background-color: var(--primary-color);
-    margin: 100px; 
+    margin: 20px
 }
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 50vh;
 }
 /*ICONE DA LOGO*/
 .logo-Menu {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     border: solid 1px black;
-    align-items: flex-start;
+    align-items: center;
+    display: flex;
 }
