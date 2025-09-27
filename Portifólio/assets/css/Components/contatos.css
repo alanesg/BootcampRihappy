@@ -1,0 +1,115 @@
+@import url(../internal.css);
+
+.menuHome{
+    padding-bottom: 40px;
+}
+
+/*contato-container*/
+.contato-container{
+    position: relative;
+    padding-bottom: 80px;
+}
+/*lado esquerdo*/
+.container_left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 8rem;
+    margin-top: 1;
+    gap: 1rem;
+}
+.name {
+    display: flex;            /* coloca os filhos na mesma linha */
+    text-align: center;      /* centraliza verticalmente */
+    gap: 5px;   
+}
+
+.name img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: solid 1px black;
+}
+.name h1 {
+    background-color: white;
+    border-radius: 50px;
+    border: solid 1px black;
+    width: 20vw;
+    height: 8vh;
+    font-size: 35px;
+    padding: 10px 12px;
+    font-weight: normal;
+}
+
+/*title-container*/
+.title-container {
+    flex-direction: column;
+}
+
+.title-container h1 {
+    color: black;
+    font-size: clamp(20px, 4vw, 90px);
+    font-weight: normal;
+    
+}
+
+.title-container h1:last-child{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/*container bottom*/
+.container-bottom {
+    position: absolute;
+    bottom: 0;                /* encosa na base do container */
+    transform: translateY(30%); /* metade da altura para fora da tela */
+    width: 300px;
+    height: 180px;
+    border-top: solid 1px black;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+    border-radius: 40px 40px 0 0;
+    background-color: white;
+    margin-left: 8rem;   
+    z-index: 10;
+
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center;  
+
+}
+.contato-container::after {
+    content:"";
+    display: block;
+    width: 100%;
+    height: 68px;             /* altura para cobrir o fundo visível */
+}
+
+.container-bottom ul {
+    
+    gap: 10px; /* espaçamento entre os itens */
+    list-style: none; 
+}
+
+/*contato list*/
+.contato-list {
+    color: black;
+    font-weight: normal;
+  
+}
+.contato-list li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    margin-top: 4px;
+    border-radius: 50%;
+    border: solid 1px black;
+    align-items: center;
+
+}
+
+.contato-list a {
+    text-decoration: none;
+    color: black;
+
+}
