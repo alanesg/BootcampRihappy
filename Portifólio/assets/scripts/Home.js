@@ -6,4 +6,13 @@ document.querySelector('.dropdown-toggle').addEventListener('click', function(ev
   dropdownMenu.classList.toggle('show');
 
   this.classList.toggle('active');
+
+  
 });
+
+/*função com condicionnal IF para deixar o menu em negrito */
+
+
+
+
+

@@ -1,0 +1,138 @@
+@import url(../internal.css);
+
+html, body {
+    overflow-x: hidden; /* remove scroll lateral */
+    overflow-y: hidden; /* remove scroll vertical */
+}
+/*CONFIG MENU HOME*/
+.menuHome{
+    padding-bottom:100px;
+    margin-bottom: 40px;
+    margin: 30px;
+}
+/*CONTAINER*/
+.container {
+    position: relative;
+    padding-bottom: 110px; /* mantém espaço só embaixo */
+    display: flex;
+    align-items: flex-start; /* força o conteúdo a começar no topo */
+}
+/*CONTAINER LEFT*/
+.container_left {
+    display: flex;
+    align-items: flex-start; /* gruda no topo */
+    justify-content: center;
+    margin-left: 2rem;
+    margin-top: -80px; /* 🔑 sobe a imagem */
+    width: 50%;
+}
+
+.container_left img {
+    border-radius: 50%;
+    width: 530px;
+    height: 530px;
+    object-fit: cover;
+}
+
+
+/*LADO DIREITO*/
+.container_right{
+    display: flex;
+    width: 50%;
+    align-items: flex-start;
+    justify-content: center;
+    padding-bottom: 50px;
+   
+    margin-right: 80px;
+    gap: 10px;
+}
+.container_right img {
+    width: 60px;
+    height: 60px;
+    border: solid 1px black;
+    border-radius: 50%;
+     margin-top: -10px;
+}
+
+.container_right h1 {
+    font-size: 20px;
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 20px 10px;
+    border: solid 2px black;
+    border-radius: 40px;
+    width: 9rem;
+    height: 1rem;
+    margin-top: -10px;
+}
+
+.container_bottom{
+    position: absolute;
+    bottom: 60px;                /* encosa na base do container */
+    transform: translateY(20%); /* metade da altura para fora da tela */
+    
+    width: 360px;
+    height: 370px;
+    margin-left: 40rem;
+
+    border-top: solid 2px black;
+    border-left: solid 2px black;
+    border-right: solid 2px black;
+
+    border-radius: 40px 40px 0 0;
+    background-color: var(--detail-color); 
+    z-index: 10;
+
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center;  
+}
+
+.container_skills {
+
+    position: absolute;
+    bottom: 80px;                /* encosa na base do container */
+    transform: translateY(22%); /* metade da altura para fora da tela */
+    width: 350px;
+    height: 400px;
+
+    border-top: solid 2px black;
+    border-left: solid 2px black;
+    border-right: solid 2px black;
+    border-radius: 40px 40px 0 0;
+    background-color: white;
+
+    margin-left: 0.2rem; 
+    z-index: 10;
+    top: -77px;   /* sobe um pouco para vazar */
+    left: -40px;  /* desloca para a esquerda */
+    width: 340px;  /* maior que a caixa para dar efeito */
+
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center; 
+}
+
+/*SKILLS*/
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colunas */
+    gap: 20px; /* espaço entre os ícones */
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    justify-items: center; /* centraliza cada ícone na coluna */
+    align-items: center;
+}
+
+.skills li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills img {
+    width: 40px;
+    height: 40px;
+}
