@@ -87,6 +87,15 @@
   transform: scale(1.05); 
 }
 
+/*CARET (setinha do menu)*/
+.caret {
+  display: inline-block;
+  transition: transform 0.3s ease; /* animação suave */
+}
+
+.caret.rotate {
+  transform: rotate(180deg); /* gira pra cima */
+}
 
 /* - HOME CONTAINER LEFT -*/
 .Home_container__left { 
