@@ -1,0 +1,13 @@
+/*todas as páginas têm e acessam*/
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
+
+/*variável para utilizar durante o projeto*/
+:root {
+    --primary-color: #b6a8d4;  
+    --second-color : #ebebed;
+    --detail-color: #d6b7cf;
+}
+
+body {
+     font-family: "Metrophobic", sans-serif;
+}

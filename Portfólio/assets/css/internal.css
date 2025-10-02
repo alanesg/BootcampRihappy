@@ -1,0 +1,23 @@
+@import url(./reset.css);
+@import url(./global.css);
+@import url(./home.css);
+
+body {
+    background-color: var(--primary-color);
+    margin: 20px
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+/*ICONE DA LOGO*/
+.logo-Menu {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: solid 1px black;
+    align-items: center;
+    display: flex;
+}
